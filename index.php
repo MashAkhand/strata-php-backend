@@ -26,11 +26,11 @@
   <header>
     <h2>Strata Building A</h2>
     <nav>
-      <a href="https://mashroor-info-1111-self-learning-strata-project.vercel.app/">Home</a>
-      <a href="https://mashroor-info-1111-self-learning-strata-project.vercel.app/board-members">Our Board Members</a>
-      <a href="https://mashroor-info-1111-self-learning-strata-project.vercel.app/our-rooms">Our Rooms</a>
+      <a href="/">Home</a>
+      <a href="/board-members">Our Board Members</a>
+      <a href="/our-rooms">Our Rooms</a>
       <a href="#">Our Amenities</a>
-      <a href="https://mashroor-info-1111-self-learning-strata-project.vercel.app/our-fees">Our Fees</a>
+      <a href="/our-fees">Our Fees</a>
       <a href="#">Public Documents</a>
       <a href="#">Help</a>
     </nav>
@@ -39,26 +39,38 @@
   <div class="container">
     <h1>Our Amenities</h1>
     <div class="amenities">
-      <div class="card">
-        <h3>Fully equipped 24/7 gym</h3>
-        <p class="green">Available 24 hours</p>
-        <p>Stay fit with our modern gym facilities, accessible anytime.</p>
-      </div>
-      <div class="card">
-        <h3>Steam room</h3>
-        <p class="green">Open 10 AM - 8 PM</p>
-        <p>Relax and rejuvenate in our communal steam room.</p>
-      </div>
-      <div class="card">
-        <h3>Pool</h3>
-        <p class="green">Open 10 AM - 8 PM</p>
-        <p>Enjoy a swim in our refreshing pool during opening hours.</p>
-      </div>
-      <div class="card">
-        <h3>24/7 security and reception</h3>
-        <p class="green">Available 24 hours</p>
-        <p>Our dedicated security and reception team is available around the clock for your safety and assistance.</p>
-      </div>
+      <?php
+        $amenities = [
+          [
+            "title" => "Fully equipped 24/7 gym",
+            "hours" => "Available 24 hours",
+            "description" => "Stay fit with our modern gym facilities, accessible anytime."
+          ],
+          [
+            "title" => "Steam room",
+            "hours" => "Open 10 AM - 8 PM",
+            "description" => "Relax and rejuvenate in our communal steam room."
+          ],
+          [
+            "title" => "Pool",
+            "hours" => "Open 10 AM - 8 PM",
+            "description" => "Enjoy a swim in our refreshing pool during opening hours."
+          ],
+          [
+            "title" => "24/7 security and reception",
+            "hours" => "Available 24 hours",
+            "description" => "Our dedicated security and reception team is available around the clock for your safety and assistance."
+          ]
+        ];
+
+        foreach ($amenities as $item) {
+          echo "<div class='card'>";
+          echo "<h3>{$item['title']}</h3>";
+          echo "<p class='green'>{$item['hours']}</p>";
+          echo "<p>{$item['description']}</p>";
+          echo "</div>";
+        }
+      ?>
     </div>
   </div>
 
