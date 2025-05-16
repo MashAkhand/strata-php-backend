@@ -26,11 +26,11 @@
   <header>
     <h2>Strata Building A</h2>
     <nav>
-      <a href="/">Home</a>
-      <a href="/board-members">Our Board Members</a>
-      <a href="/our-rooms">Our Rooms</a>
+      <a href="https://mashroor-info-1111-self-learning-strata-project.vercel.app/">Home</a>
+      <a href="https://mashroor-info-1111-self-learning-strata-project.vercel.app/board-members">Our Board Members</a>
+      <a href="https://mashroor-info-1111-self-learning-strata-project.vercel.app/our-rooms">Our Rooms</a>
       <a href="#">Our Amenities</a>
-      <a href="/our-fees">Our Fees</a>
+      <a href="https://mashroor-info-1111-self-learning-strata-project.vercel.app/our-fees">Our Fees</a>
       <a href="#">Public Documents</a>
       <a href="#">Help</a>
     </nav>
